@@ -15,6 +15,7 @@ Directory Listing
 * masterserver/ - Master Server, the backbone that selects a suitable CDNS, hosted by Cloud Chiller
 	* libs/ - Required libraries
 	* README.md - Readme for that part of the project in particular.
+* randumbstuff/ - You know, images and shit.
 * LICENCE.md - Guess.
 * README.md - This document, silly!
 * .gitignore - Specifies what files to get ignored by GIT.
