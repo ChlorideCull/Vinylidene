@@ -1,5 +1,4 @@
-Vinylidene (Vinyl Player)
-================
+[](http://cloudchiller.net/downloads/images/logo.png)
 
 Vinylidene is the next generation music streaming service, servicing pony related artists and simular over a secure distribution network provided by the community, powered by a master server and MySQL.
 
