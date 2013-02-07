@@ -15,6 +15,9 @@ Directory Listing
 	* libs/ - Required libraries
 	* README.md - Readme for that part of the project in particular.
 * randumbstuff/ - You know, images and shit.
+* docs/ - Documents related to the project (documentation, RFCs etc.)
+	* permissions.ods - All Permissions gathered. (Yes, it's an OpenDocument
+	* NetworkConcept - Pretty ASCII art about the Networking
 * LICENCE.md - Guess.
 * README.md - This document, silly!
 * .gitignore - Specifies what files to get ignored by GIT.
