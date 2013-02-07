@@ -1,3 +1,5 @@
+Note: Use a MONOSPACE FONT.
+
 ┌----------------┐			getUpdates()		┌----------------┐
 |  Master Server |<-----------------------------|   CDN Server   |
 |                |								|                |
