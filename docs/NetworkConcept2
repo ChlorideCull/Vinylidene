@@ -1,0 +1,64 @@
+Fluoride - Vinylidene Network API
+
+All transmissions encrypted using AES256
+
+1) Send Login Message to Master Server containing 'Username/Handle' + 'AccessID (Pass SHA256 if password, else if social, access key)'
+2) Passcode Message from Master Server to CDN and Client, 'Username' + SHA256 of ('Username' + 'AccessID' + 'Server CPU ID SHA256' + 'CDN CPU ID SHA256')
+
+Every connect and API function is logged.
+
+Fluoride linear connection simulation
+---------------------------------------------------------------------
+Master Server				CDN					Client
+												login()
+	*hit*												
+	*return*
+							*hit*				*hit*
+							*saved*				*saved*
+												getPlaylists(hash)
+	*hit*
+	*encrypt*
+	*return*
+												*hit*
+												*decrypt*
+												getPlaylist(hash)
+	*hit*
+	*encrypt*
+	*return*
+												*hit*
+												*decrypt*
+												getMetadata(hash, id)
+							*hit*
+							*encrypt*
+							*return*
+												*hit*
+												*decrypt*
+												getMusicData(hash, id)
+							*hit*
+							*encrypt*
+							*return*
+												*hit*
+							*encrypt*			*decrypt*
+							*return*			*play*
+												*hit*
+							*encrypt*			*decrypt*
+							*return*			*play*
+												*hit*
+							*encrypt*			*decrypt*
+							*return*			*play*
+												*hit*
+							*encrypt*			*decrypt*
+							*return*			*play*
+												*hit*
+							*encrypt*			*decrypt*
+							*return*			*play*
+												*hit*
+							*encrypt*			*decrypt*
+							*return*			*play*
+												*hit*
+							*encrypt*			*decrypt*
+							*return*			*play*
+												*hit*
+												*decrypt*
+												*play*
+												*end of song*
