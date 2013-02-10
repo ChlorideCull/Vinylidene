@@ -1,4 +1,4 @@
-#include "fluorideMasterServer.h"
+#include "fluoridemasterserver.h"
 
 flourideMasterServer::fluorideMasterServer(QString mysqlHostName, QString mysqlDatabase, QString mysqlUsername, QString mysqlPassword)
 {
