@@ -17,7 +17,9 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    versionhandler.cpp
+    versionhandler.cpp \
+    fluoridemasterserver.cpp
 
 HEADERS += \
-    versionhandler.h
+    versionhandler.h \
+    fluoridemasterserver.h
